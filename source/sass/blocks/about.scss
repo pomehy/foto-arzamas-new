@@ -1,0 +1,9 @@
+.about__wrapper {
+  @include container;
+}
+
+.about {
+  h2 {
+    @include section-title;
+  }
+}

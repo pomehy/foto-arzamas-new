@@ -1,0 +1,18 @@
+.features__wrapper {
+  @include container;
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.features__item {
+  h3 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}

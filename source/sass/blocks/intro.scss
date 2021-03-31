@@ -1,0 +1,30 @@
+.intro {
+  background-color: $basic-black-light;
+}
+
+.intro__wrapper {
+  @include container;
+}
+
+.intro__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: $basic-white;
+
+  h2 {
+    margin-top: 0;
+    font-family: "BebasNeueRegular", "Arial", sans-serif;
+    font-size: 80px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  span {
+    font-size: 17px;
+    text-transform: uppercase;
+  }
+}

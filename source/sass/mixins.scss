@@ -1,0 +1,56 @@
+@mixin container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px;
+
+  box-sizing: border-box;
+
+  @media (max-width: $tablet-width) {
+    max-width: 1199px;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 767px;
+    min-width: 320px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+@mixin section-title {
+  margin-top: 0;
+  font-family: "BebasNeueRegular", "Arial", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+
+@mixin status {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+// @mixin section-title {
+//   font-weight: 700;
+//   font-size: 25px;
+//   line-height: 30px;
+//   color: $basic-black;
+
+//   @media (min-width: $tablet-width) {
+//     font-size: 43px;
+//     line-height: 50px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     font-size: 53px;
+//     line-height: 57px;
+//   }
+// }

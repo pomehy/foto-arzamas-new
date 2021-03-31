@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src:
+    local("OpenSans"),
+    local("Open-Sans"),
+    url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src:
+    local("OpenSans"),
+    local("Open-Sans"),
+    url("../fonts/opensansbold.woff2") format("woff2"),
+    url("../fonts/opensansbold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BebasNeueRegular";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src:
+    local("BebasNeueRegular"),
+    local("Bebas-Neue-Regular"),
+    url("../fonts/BebasNeueRegular.woff2") format("woff2"),
+    url("../fonts/BebasNeueRegular.woff") format("woff");
+}
+
+// @font-face {
+//   font-family: "BebasNeueBold";
+//   font-weight: 600;
+//   font-style: normal;
+//   font-display: swap;
+//   src:
+//     local("BebasNeueBold"),
+//     local("Bebas-Neue-Bold"),
+//     url("../fonts/BebasNeueBold.woff2") format("woff2"),
+//     url("../fonts/BebasNeueBold.woff") format("woff");
+// }
