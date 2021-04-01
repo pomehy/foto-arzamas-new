@@ -1,6 +1,40 @@
 .socials__list {
+  display: flex;
+  justify-content: space-between;
+
   margin: 0;
   padding: 0;
 
+  width: 100%;
+
   list-style: none;
+}
+
+.socials__item {
+  display: flex;
+  margin-right: 7px;
+  width: 100%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.socials__link {
+  display: flex;
+  width: 100%;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include status;
+}
+
+.socials__link--vkontakte {
+  background-image: url("../../img/decor/vk-logo.svg");
+}
+
+.socials__link--instagram {
+  background-image: url("../../img/decor/instagram-logo.svg");
 }

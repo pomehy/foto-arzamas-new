@@ -6,7 +6,14 @@
 }
 
 .footer-nav__item {
+  margin-bottom: 5px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   a {
+    font-size: 15px;
     color: $basic-white;
     text-decoration: none;
 

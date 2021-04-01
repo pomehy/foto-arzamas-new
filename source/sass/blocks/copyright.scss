@@ -1,22 +1,41 @@
 .page-footer__copyright {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .copyright__text {
+  max-width: 75%;
+
   p {
+    margin-top: 0;
     font-size: 12px;
     color: transparentize($basic-white, 0.3);
   }
 }
 
 .copyright__developer {
+  text-align: end;
+
   p {
+    margin-bottom: 10px;
+    font-size: 13px;
+    margin-top: 0;
     color: $basic-white;
   }
 
   a {
+    padding: 3px 7px;
+    font-weight: 700;
     color: $basic-white;
     text-decoration: none;
+    text-transform: uppercase;
+
+    border: 1px solid $basic-white;
+
+    &:hover,
+    &:focus {
+      color: $basic-yellow;
+    }
   }
 }

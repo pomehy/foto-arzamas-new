@@ -5,6 +5,7 @@
 }
 
 .reviews__wrapper {
+  position: relative;
   @include container;
   display: flex;
   justify-content: center;
@@ -26,16 +27,21 @@
 
 .reviews__item--active {
   display: flex;
+  animation-name: fade;
+  animation-duration: 0.5s;
 }
 
 .reviews__author {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   margin: 0;
 }
 
 .reviews__note {
+  margin-top: 30px;
+
   a {
     margin-left: 5px;
     padding-right: 7px;
@@ -48,4 +54,34 @@
 
     @include status;
   }
+}
+
+.reviews__buttons-group {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.reviews__button {
+  width: 35px;
+  height: 60px;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border: none;
+  cursor: pointer;
+
+  @include status;
+}
+
+.reviews__button--prev {
+  background-image: url("../../img/decor/arrow-slider-dark.svg");
+}
+
+.reviews__button--next {
+  background-image: url("../../img/decor/arrow-slider-dark.svg");
+  transform: rotate(180deg);
 }

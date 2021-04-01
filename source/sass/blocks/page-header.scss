@@ -1,6 +1,9 @@
 .page-header {
   position: fixed;
+  z-index: 10;
   width: 100%;
+
+  box-shadow: 0 3px 6px transparentize($basic-black-light, 0.6);
 }
 
 .page-header__header-contacts {

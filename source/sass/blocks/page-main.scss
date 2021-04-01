@@ -1,5 +1,10 @@
 .page-main {
-  padding-top: 30px;
+  padding-top: 50px;
+}
+
+.page-main__anchor {
+  margin-top: -110px;
+  margin-bottom: 110px;
 }
 
 .page-main__intro {
@@ -21,6 +26,12 @@
   @include section-padding;
 }
 
+.page-main__partners {
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
 .page-main__contacts {
-  @include section-padding;
+  padding-top: 150px;
+  padding-bottom: 80px;
 }

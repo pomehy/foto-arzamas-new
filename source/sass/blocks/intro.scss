@@ -1,5 +1,11 @@
 .intro {
   background-color: $basic-black-light;
+  background-image: url("../../img/intro-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  background-attachment: fixed;
 }
 
 .intro__wrapper {
@@ -10,8 +16,18 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 40px;
+  padding-right: 50px;
+  padding-bottom: 40px;
+  padding-left: 50px;
+
   text-align: center;
   color: $basic-white;
+
+  border: 10px solid $basic-white;
+
+  box-sizing: border-box;
+
 
   h2 {
     margin-top: 0;
@@ -19,6 +35,7 @@
 
     font-family: "BebasNeueRegular", "Arial", sans-serif;
     font-size: 80px;
+    letter-spacing: 0.02em;
   }
 
   p {

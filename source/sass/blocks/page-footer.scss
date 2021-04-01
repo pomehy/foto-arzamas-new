@@ -1,4 +1,6 @@
 .page-footer {
+  padding-top: 20px;
+
   background-color: $basic-black-light;
   background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
   background-size: 4px 4px;
@@ -13,7 +15,9 @@
 }
 
 .page-footer__logo {
-  fill: $basic-white;
+  svg {
+    fill: $basic-white;
+  }
 }
 
 .page-footer__button {
@@ -35,4 +39,16 @@
       opacity: 0.6;
     }
   }
+}
+
+.page-footer__socials {
+  display: flex;
+  min-width: 87px;
+  min-height: 40px;
+}
+
+.page-footer__copyright {
+  margin-top: 35px;
+  padding-top: 20px;
+  border-top: 1px solid transparentize($basic-white, 0.8);
 }
