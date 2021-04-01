@@ -1,0 +1,34 @@
+.contacts {
+  h2 {
+    @include section-title;
+  }
+}
+
+.contacts__wrapper {
+  @include container;
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.contacts__item {
+  color: $basic-black;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    @include status;
+  }
+}
+
+.contacts__sublist {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

@@ -1,5 +1,6 @@
 @mixin container {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-right: 50px;
@@ -25,6 +26,11 @@
   font-size: 40px;
   font-weight: 400;
   text-align: center;
+}
+
+@mixin section-padding {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 @mixin status {

@@ -1,0 +1,26 @@
+.page-main {
+  padding-top: 30px;
+}
+
+.page-main__intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.page-main__about {
+  @include section-padding;
+}
+
+.page-main__offers {
+  @include section-padding;
+}
+
+.page-main__reviews {
+  @include section-padding;
+}
+
+.page-main__contacts {
+  @include section-padding;
+}

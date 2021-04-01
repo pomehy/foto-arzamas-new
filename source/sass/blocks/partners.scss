@@ -1,0 +1,23 @@
+.partners {
+  background-color: $basic-black-light;
+  background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  background-size: 4px 4px;
+
+  h2 {
+    @include section-title;
+    color: $basic-white;
+  }
+}
+
+.partners__wrapper {
+  @include container;
+}
+
+.partners__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

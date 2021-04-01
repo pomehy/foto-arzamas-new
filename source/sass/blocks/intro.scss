@@ -15,6 +15,8 @@
 
   h2 {
     margin-top: 0;
+    margin-bottom: 25px;
+
     font-family: "BebasNeueRegular", "Arial", sans-serif;
     font-size: 80px;
   }
@@ -24,7 +26,20 @@
   }
 
   span {
+    display: inline-block;
+    align-self: center;
+    margin-top: 25px;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+
     font-size: 17px;
     text-transform: uppercase;
+    color: $basic-white;
+    text-align: center;
+    letter-spacing: 1px;
+
+    border: 1px dashed $basic-white;
   }
 }

@@ -1,0 +1,38 @@
+.page-footer {
+  background-color: $basic-black-light;
+  background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  background-size: 4px 4px;
+}
+
+.page-footer__wrapper {
+  @include container;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.page-footer__logo {
+  fill: $basic-white;
+}
+
+.page-footer__button {
+  a {
+    padding: 15px 40px;
+    font-size: 13px;
+    text-decoration: none;
+
+    color: $basic-white;
+    border: 1px dashed $basic-white;
+
+    &:hover,
+    &:focus {
+      color: transparentize($basic-yellow, 0.15);
+      border-color: transparentize($basic-yellow, 0.15);
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}

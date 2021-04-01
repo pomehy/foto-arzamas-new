@@ -1,0 +1,22 @@
+.footer-nav__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.footer-nav__item {
+  a {
+    color: $basic-white;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: transparentize($basic-yellow, 0.15);
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}

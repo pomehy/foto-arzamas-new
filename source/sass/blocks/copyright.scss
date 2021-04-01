@@ -1,0 +1,22 @@
+.page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright__text {
+  p {
+    font-size: 12px;
+    color: transparentize($basic-white, 0.3);
+  }
+}
+
+.copyright__developer {
+  p {
+    color: $basic-white;
+  }
+
+  a {
+    color: $basic-white;
+    text-decoration: none;
+  }
+}
