@@ -19,6 +19,10 @@
   padding: 0;
 
   list-style: none;
+
+  @media (max-width: $tablet-width) {
+    justify-content: center;
+  }
 }
 
 .offers__item {
@@ -32,7 +36,7 @@
   padding-left: 10px;
   padding-bottom: 10px;
 
-  max-width: 255px;
+  max-width: 23.5%;
 
   background-color: $basic-white;
 
@@ -52,6 +56,7 @@
     font-family: "BebasNeueRegular", "Arial", sans-serif;
     font-weight: 400;
     font-size: 28px;
+    text-align: center;
   }
 
   p {
@@ -59,29 +64,62 @@
     text-align: center;
   }
 
-  a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 13px;
-    padding-bottom: 13px;
+  @media (max-width: $tablet-width) {
+    margin-right: 10px;
+    margin-left: 10px;
 
-    width: 100%;
+    max-width: 45%;
+    width: 340px;
+  }
 
-    text-decoration: none;
-    text-align: center;
-    color: $basic-black-light;
-    background-color: $basic-yellow;
+  @media (max-width: $mobile-width) {
+    max-width: 100%;
+    width: 280px;
+  }
+}
 
-    border-radius: 5px;
+.offers__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 13px;
+  padding-bottom: 13px;
 
-    &:hover,
-    &:focus {
-      background-color: #FFBD30;
-    }
+  width: 100%;
 
-    &:active {
-      color: transparentize($basic-black-light, 0.7);
-    }
+  text-decoration: none;
+  text-align: center;
+  color: $basic-black-light;
+  background-color: $basic-yellow;
+
+  border-radius: 5px;
+
+  &:hover,
+  &:focus {
+    background-color: #FFBD30;
+  }
+
+  &:active {
+    color: transparentize($basic-black-light, 0.7);
+  }
+}
+
+.offers__item--discount {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: 10px;
+
+    width: 55px;
+    height: 63px;
+
+    background-image: url("../../img/decor/discount-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
 }
