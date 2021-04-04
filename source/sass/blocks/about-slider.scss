@@ -6,13 +6,40 @@
 
   list-style: none;
   box-sizing: border-box;
+
   overflow: hidden;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .about-slider__item {
+  position: relative;
+
   display: none;
+  justify-content: center;
   height: 350px;
+
   overflow: hidden;
+
+  @media (max-width: $tablet-width) {
+    align-items: center;
+    height: 430px;
+
+    img {
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    height: auto;
+
+    img {
+      position: static;
+    }
+  }
 }
 
 .about-slider__item--active {
@@ -22,18 +49,33 @@
 }
 
 .about-slider__controls {
+  position: absolute;
+  bottom: -30px;
+
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+
+  @media (max-width: $tablet-width) {
+    bottom: -45px;
+  }
+
+  @media (max-width: $mobile-width) {
+    bottom: -35px;
+  }
 }
 
 .about-slider__toggle {
+  position: relative;
+
   display: flex;
+  align-items: center;
+  justify-content: center;
+
   margin-right: 15px;
   padding: 0;
 
-  width: 11px;
-  height: 11px;
+  width: 12px;
+  height: 12px;
 
   border: none;
   border-radius: 50%;
@@ -51,11 +93,23 @@
 
 .about-slider__toggle--active {
   background-color: transparentize($basic-black-light, 0.1);
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 6px;
+    height: 6px;
+
+    background-color: $basic-pink;
+    background-color: $basic-yellow;
+    border-radius: 50%;
+  }
 }
 
 .about-slider__buttons-group {
   position: absolute;
-  top: 160px;
+  top: calc(50% - 25px);
 
   display: flex;
   justify-content: space-between;
@@ -64,12 +118,13 @@
 }
 
 .about-slider__button {
-  width: 35px;
-  height: 60px;
+  width: 45px;
+  height: 70px;
 
   background-color: transparentize($basic-black-light, 0.5);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
 
   border: none;
   cursor: pointer;
@@ -81,6 +136,11 @@
 
   &:active {
     background-color: transparentize($basic-black-light, 0.7);
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 35px;
+    height: 60px;
   }
 }
 
