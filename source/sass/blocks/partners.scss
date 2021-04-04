@@ -23,3 +23,28 @@
 
   list-style: none;
 }
+
+.partners__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: $tablet-width) {
+    img {
+      max-width: 90%;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 50px;
+    width: 100%;
+
+    img {
+      max-width: 100%;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
