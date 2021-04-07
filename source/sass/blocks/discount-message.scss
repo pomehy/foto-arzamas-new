@@ -1,0 +1,44 @@
+.discount-message {
+  background-color: transparentize($basic-pink, 0.1);
+
+  p {
+    margin: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 10px;
+
+    font-size: 18px;
+    color: $basic-white;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: $mobile-width) {
+    p {
+      padding-top: 6px;
+      padding-bottom: 6px;
+      font-size: 14px;
+    }
+  }
+}
+
+.discount-message__wrapper {
+  @include container;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.discount-message__close {
+  padding: 10px;
+  border: none;
+  box-sizing: border-box;
+  background-color: transparent;
+  background-image: url(".././img/decor/cross-icon.svg");
+  background-position: center;
+  background-size: contain;
+  transform: rotate(45deg);
+
+  cursor: pointer;
+
+  @include status;
+}

@@ -1,0 +1,42 @@
+.toggle-menu__icon {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.toggle-menu__icon--rotate45.toggle-menu__icon--active {
+  transform: rotate(45deg);
+}
+
+.hamRotate180.toggle-menu__icon--active {
+  transform: rotate(180deg);
+}
+
+.line {
+  fill:none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke:#000;
+  stroke-width:5.5;
+  stroke-linecap:round;
+}
+
+.toggle-menu__icon .top {
+  stroke-dasharray: 40 139;
+}
+
+.toggle-menu__icon .bottom {
+  stroke-dasharray: 40 180;
+}
+
+.toggle-menu__icon.toggle-menu__icon--active .top {
+  stroke-dashoffset: -98px;
+}
+
+.toggle-menu__icon.toggle-menu__icon--active .bottom {
+  stroke-dashoffset: -138px;
+}
+

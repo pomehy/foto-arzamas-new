@@ -79,30 +79,7 @@
 }
 
 .offers__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: auto;
-  padding-top: 13px;
-  padding-bottom: 13px;
-
-  width: 100%;
-
-  text-decoration: none;
-  text-align: center;
-  color: $basic-black-light;
-  background-color: $basic-yellow;
-
-  border-radius: 5px;
-
-  &:hover,
-  &:focus {
-    background-color: #FFBD30;
-  }
-
-  &:active {
-    color: transparentize($basic-black-light, 0.7);
-  }
+  @include button;
 }
 
 .offers__item--discount {
@@ -117,7 +94,7 @@
     width: 55px;
     height: 63px;
 
-    background-image: url("../../img/decor/discount-icon.svg");
+    background-image: url(".././img/decor/discount-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

@@ -6,13 +6,10 @@
 }
 
 .footer-nav__item {
-  margin-bottom: 5px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-
   a {
+    display: flex;
+    padding-top: 4px;
+    padding-bottom: 4px;
     font-size: 15px;
     color: $basic-white;
     text-decoration: none;

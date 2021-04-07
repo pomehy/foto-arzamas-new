@@ -1,0 +1,61 @@
+.category__content {
+  padding: 25px;
+  background-color: $basic-white;
+
+  border-radius: 5px;
+
+  @media (max-width: $mobile-width) {
+    padding: 15px;
+  }
+}
+
+.category__header {
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 20px;
+  border-bottom: 2px solid transparentize($basic-black-light, 0.8);
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    padding-right: 20px;
+
+    color: $basic-black-light;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: $mobile-width) {
+    h2 {
+      font-size: 18px;
+    }
+  }
+}
+
+.category__product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+  }
+}
+
+.category__discount-message {
+  p {
+    padding: 10px;
+    text-align: center;
+    color: $basic-white;
+  }
+}
+
+.category__footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.category__button {
+  @include button;
+}

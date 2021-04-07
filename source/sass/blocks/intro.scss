@@ -1,6 +1,7 @@
 .intro {
   background-color: $basic-black-light;
-  background-image: url("../../img/intro-bg.jpg");
+
+  background-image: url(".././img/intro-bg-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -58,5 +59,35 @@
     letter-spacing: 1px;
 
     border: 1px dashed $basic-white;
+  }
+
+  @media (max-width: $tablet-width) {
+    h2 {
+      margin-bottom: 15px;
+      font-size: 50px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-right: 0;
+    padding-left: 0;
+
+    border: none;
+
+    h2 {
+      font-size: 38px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    span {
+      padding-top: 5px;
+      padding-bottom: 5px;
+
+      font-size: 12px;
+      font-weight: 700;
+    }
   }
 }

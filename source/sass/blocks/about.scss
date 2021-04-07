@@ -33,8 +33,12 @@
 
   @media (max-width: $tablet-width) {
     margin-bottom: 80px;
-    max-width: 100%;
+    max-width: 90%;
     width: 100%;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 100%;
   }
 }
 

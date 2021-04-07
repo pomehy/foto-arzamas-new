@@ -1,5 +1,20 @@
+.socials--big {
+  .socials__item {
+    width: 40px;
+    height: 40px;
+  }
+
+  @media (max-width: $tablet-width) {
+    .socials__item {
+      width: 35px;
+      height: 35px;
+    }
+  }
+}
+
 .socials__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   margin: 0;
@@ -13,7 +28,8 @@
 .socials__item {
   display: flex;
   margin-right: 7px;
-  width: 100%;
+  width: 28px;
+  height: 28px;
 
   &:last-child {
     margin-right: 0;
@@ -32,9 +48,9 @@
 }
 
 .socials__link--vkontakte {
-  background-image: url("../../img/decor/vk-logo.svg");
+  background-image: url(".././img/decor/vk-logo.svg");
 }
 
 .socials__link--instagram {
-  background-image: url("../../img/decor/instagram-logo.svg");
+  background-image: url(".././img/decor/instagram-logo.svg");
 }

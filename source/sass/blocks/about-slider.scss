@@ -25,19 +25,23 @@
 
   @media (max-width: $tablet-width) {
     align-items: center;
-    height: 430px;
+    height: 390px;
 
     img {
       position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
     }
   }
 
   @media (max-width: $mobile-width) {
     height: auto;
+    height: 200px;
 
     img {
-      position: static;
+      max-width: none;
+      width: 120%;
     }
   }
 }
@@ -50,17 +54,13 @@
 
 .about-slider__controls {
   position: absolute;
-  bottom: -30px;
+  bottom: -40px;
 
   display: flex;
   justify-content: center;
 
   @media (max-width: $tablet-width) {
-    bottom: -45px;
-  }
-
-  @media (max-width: $mobile-width) {
-    bottom: -35px;
+    bottom: -50px;
   }
 }
 
@@ -71,32 +71,35 @@
   align-items: center;
   justify-content: center;
 
-  margin-right: 15px;
-  padding: 0;
-
-  width: 12px;
-  height: 12px;
+  width: 44px;
+  height: 44px;
 
   border: none;
-  border-radius: 50%;
 
-  background-color: transparentize($basic-black-light, 0.8);
+  background-color: transparent;
 
   box-sizing: border-box;
 
   cursor: pointer;
 
-  &:last-of-type {
-    margin-right: 0;
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 14px;
+    height: 14px;
+
+    border-radius: 50%;
+
+    background-color: transparentize($basic-black-light, 0.5);
   }
 }
 
 .about-slider__toggle--active {
-  background-color: transparentize($basic-black-light, 0.1);
-
   &::before {
     content: "";
     position: absolute;
+    z-index: 1;
 
     width: 6px;
     height: 6px;
@@ -109,12 +112,17 @@
 
 .about-slider__buttons-group {
   position: absolute;
+  z-index: 3;
   top: calc(50% - 25px);
 
   display: flex;
   justify-content: space-between;
 
   width: calc(100% - 14px);
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .about-slider__button {
@@ -145,11 +153,11 @@
 }
 
 .about-slider__button--prev {
-  background-image: url("../../img/decor/arrow-slider.svg");
+  background-image: url(".././img/decor/arrow-slider.svg");
 }
 
 .about-slider__button--next {
-  background-image: url("../../img/decor/arrow-slider.svg");
+  background-image: url(".././img/decor/arrow-slider.svg");
   transform: rotate(180deg);
 }
 

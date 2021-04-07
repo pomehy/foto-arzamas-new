@@ -12,6 +12,13 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 60px;
+    padding-top: 30px;
+    min-height: 400px;
+    height: auto;
+  }
 }
 
 .page-main__about {
@@ -32,6 +39,14 @@
 }
 
 .page-main__contacts {
-  padding-top: 150px;
+  padding-top: 50px;
   padding-bottom: 80px;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 40px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 30px;
+  }
 }

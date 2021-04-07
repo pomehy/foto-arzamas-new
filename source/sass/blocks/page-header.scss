@@ -17,3 +17,12 @@
   padding-bottom: 12px;
   box-sizing: border-box;
 }
+
+.page-header__discount-message {
+  display: none;
+}
+
+.page-header__discount-message--show {
+  display: block;
+}
+

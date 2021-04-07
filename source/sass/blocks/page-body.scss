@@ -10,3 +10,8 @@
   font-style: normal;
   font-weight: 400;
 }
+
+.page-body--no-scroll {
+  overflow-y: hidden;
+  padding-right: 17px;
+}

@@ -1,6 +1,7 @@
 .author {
   img {
     border-radius: 50%;
+    max-width: 200px;
   }
 }
 
@@ -10,5 +11,24 @@
 
   cite {
     font-weight: 700;
+  }
+
+  @media (max-width: $tablet-width) {
+    p {
+      font-size: 15px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 30px;
+    margin-left: 0;
+
+    p {
+      text-align: center;
+    }
   }
 }
