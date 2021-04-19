@@ -1,0 +1,61 @@
+
+.page-not-found__wrapper {
+  @include container;
+
+  min-height: 400px;
+
+  background-image: url(".././img/404.jpg");
+  background-repeat: no-repeat;
+  background-position-x: 80%;
+  background-position-y: bottom;
+
+  p {
+    max-width: 40%
+  }
+
+  a {
+    @include button;
+    margin-top: 40px;
+
+    max-width: 250px;
+    color: $basic-white;
+    background-color: $basic-pink;
+
+    &:hover,
+    &:focus {
+      background-color: transparentize($basic-pink, 0.1);
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    background-size: 57%;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 480px;
+    background-position-x: center;
+    background-size: 80%;
+
+    p {
+      max-width: 100%;
+      text-align: center;
+    }
+
+    a {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 80%;
+    }
+  }
+}
+
+.page-not-found__title {
+  @include section-title;
+
+  text-align: start;
+
+  @media (max-width: $mobile-width) {
+    text-align: center;
+  }
+}

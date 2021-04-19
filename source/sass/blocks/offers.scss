@@ -64,6 +64,10 @@
     text-align: center;
   }
 
+  img {
+    display: block;
+  }
+
   @media (max-width: $tablet-width) {
     margin-right: 10px;
     margin-left: 10px;

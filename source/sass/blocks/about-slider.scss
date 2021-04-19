@@ -28,9 +28,7 @@
     height: 390px;
 
     img {
-      position: absolute;
-      top: 0;
-      left: 0;
+      object-fit: cover;
       width: 100%;
     }
   }
@@ -91,7 +89,7 @@
 
     border-radius: 50%;
 
-    background-color: transparentize($basic-black-light, 0.5);
+    background-color: transparentize($basic-black-light, 0.2);
   }
 }
 
