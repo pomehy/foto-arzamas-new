@@ -17,12 +17,6 @@ const categoryPrintPhoto = document.querySelector('.category[data-category="prin
 const categoryGiftCookware = document.querySelector('.category[data-category="gift-cookware"]');
 const categoryGift = document.querySelector('.category[data-category="gift"]');
 
-
-// const offersPolygraphy = document.querySelector('.offers__item[data-offer="polygraphy"]');
-// const offersPhoto = document.querySelector('.offers__item[data-offer="photo"]');
-// const offersWorkdoc = document.querySelector('.offers__item[data-offer="workdoc"]');
-
-
 const offersItems = document.querySelectorAll('.offers__item');
 
 const addDiscountImage = (category) => {
