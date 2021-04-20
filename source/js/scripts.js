@@ -40,11 +40,12 @@ const addJivoChat = () => {
   const jivoChat = document.createElement('script');
   jivoChat.src = "//code-ya.jivosite.com/widget/08vF3Bn5fa";
   jivoChat.async = true;
-  pageBody.append(jivoChat);
+  document.head.append(jivoChat);
 }
 
-setTimeout(addJivoChat, 2300);
-
+window.onload = () => {
+  setTimeout(addJivoChat,1000);
+};
 
 const getSrcImage = (imageWrapper) => {
 
